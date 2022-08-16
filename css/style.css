@@ -1,0 +1,140 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap);
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+	background-color: gray;
+	margin: 50px;
+	box-shadow: 2px 3px 5px 1px rgb(95, 95, 95);
+	border-radius: 5px;
+}
+
+ul{
+	display: grid;
+	justify-content: center;
+	gap: 10px;
+	padding: 10px;
+	background-color: rgb(182, 69, 55);
+	margin: 30px;
+	border-radius: 5px;
+	box-shadow: 2px 3px 10px 1px rgb(139, 52, 41);
+	opacity: 0.95;
+}
+
+li{
+	background-color: rgb(252, 247, 247);
+	box-shadow: 2px 1px 0px 1px rgb(219, 216, 216);
+	border-radius: 5px;
+	opacity: 0.9;
+}
+
+.threeUl{
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	width: 200px;
+	height: 200px;
+}
+
+.fourUl{
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	width: 270px;
+	height: 270px;
+}
+
+.threeIcon{
+grid-template-rows: repeat(3, 1fr );
+height: 200px;
+}
+
+.fourIcon{
+grid-template-rows: repeat(4, 1fr );
+height: 270px;
+}
+
+.icon{
+display: grid;
+width: 70px;
+gap: 10px;
+padding: 10px;
+margin: 30px 10px 10px 10px;
+background-color: rgb(182, 69, 55);
+border-radius: 5px;
+box-shadow: 2px 3px 10px 1px rgb(139, 52, 41);
+opacity: 0.95;
+}
+
+.iconItem{
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: rgb(252, 247, 247);
+	box-shadow: 2px 1px 0px 1px rgb(219, 216, 216);
+	opacity: 0.9;
+}
+
+.iconItem:before{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	z-index: 1;
+}
+
+img{
+	position: relative;
+	width: 50px;
+	border-radius: 5px;
+}
+
+.iconLevel{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-row-start: 2;
+	grid-column-start: span 3;
+	height: 40px;
+	background-color: chocolate;
+	margin: 10px 20px 0 20px;
+	border-radius: 5px;
+	box-shadow: 2px 3px 10px 1px rgb(156, 77, 21);
+	opacity: 0.95;
+	color: rgb(219, 216, 216);
+	font-size: 20px;
+}
+
+span{
+	padding: 10px;
+}
+
+.info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 20px 0 20px;
+	grid-row-start: 1;
+	grid-column-start: span 3;
+	background-color: white;
+	height: 40px;
+	background-color: chocolate;
+	border-radius: 5px;
+	box-shadow: 2px 3px 10px 1px rgb(156, 77, 21);
+	opacity: 0.95;
+	color: rgb(219, 216, 216);
+	font-size: 20px;
+}
+
